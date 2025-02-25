@@ -1,0 +1,8 @@
+$Mulish: ('Regular', 400), ('Medium', 500), ('Bold', 700);
+@each $name, $weight in $Mulish {
+    @font-face {
+        font-family: 'Mulish';
+        src: url('@/assets/fonts/Mulish-#{$name}.ttf');
+        font-weight: $weight;
+    }
+}
